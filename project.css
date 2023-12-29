@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    margin: 0;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+li{
+    list-style-type: none;
+}
+.links li a{
+    color: #817e7e;
+    display: block;
+}
+.links li a:hover{
+    color: white;
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+.nav{
+    width: 100%;
+    height: 90px;
+    max-width: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@font-face {
+    font-family: regularQ;
+    src: url(QualeyfreeItalic-d94XR.otf);
+}
+.nav .logo a{
+    font-family: regularQ;
+    font-size: 20px;
+}
+.nav .links {
+    display: flex;
+    gap: 3rem;
+    color: rgba(175, 174, 174, 0.877);
+}
+
+.nav .toogle{
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+.action_btn{
+    background-color: rgba(255, 230, 0, 0.945);
+    padding: 15px;
+    color: black;
+}
+.nav a{
+    font-size: 20px;
+}
+
+/*Dropdown menu */
+.dropdown{
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: hsla(0, 0%, 23%, 0.178);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    color: #5e5c5cc2;
+    transition: height .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.dropdown li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown .action_btn{
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+
+.dropdown.open {
+    height: 240px;
+}
+
+/*Responsive for mobile*/
+
+@media(max-width: 992px)  {
+    li, .action_btn {
+        display: none;
+    }
+    .nav .toogle {
+        display: block;
+    }
+    .dropdown{
+        display: block;
+    }
+    .txt{
+        width:100%;
+    }
+}
+
+@media (max-width : 480px) {
+    li, .action_btn {
+        display: none;
+    }
+    .nav .toogle {
+        display: block;
+    }
+    .dropdown{
+        display: block;
+    }
+}
+.txt{
+    width: 100%;
+}
+.txt1{
+    font-family: regularQ;
+    font-size: 5.8vw;
+    margin-top: 20px;
+    color: white;
+    height: auto;
+    width:fit-content;
+}
+.txt2{
+    font-size: 2.2vw;
+    color: #817e7e;
+    height: auto;
+    width: fit-content;
+}
+.body {
+    width: fit-content;
+    margin-left: 29px;
+}
+.img {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    width: fit-content;
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.some{
+    display: flex;
+    width:fit-content;
+    height: 100%;
+    visibility: visible;
+}
+.first{
+    width: 100%;
+    height: 100%;
+    margin: 5%;
+    overflow: hidden;
+}
+.head{
+    font-size: 3.8vw;
+    font-family: regularQ;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+.text{
+    font-size: 2.6vw;
+    color:#817e7e;
+    margin: 6px;
+    line-height: 1.5;
+}
+
+.first img{
+    overflow: hidden;
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+    object-fit:cover;
+}
+.first img:hover{
+    scale: 1.1;
+}
+
+@media screen and (max-width:1023px) {
+    .some{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    }
+}
+
+.body1 {
+    width: fit-content;
+}
+.fif{
+    width: 50%;
+    height: 100%;
+    margin: 5%;
+}
+
+.action_btn1{
+    background-color: rgba(255, 230, 0, 0.945);
+    padding: 15px;
+    color: black;
+    font-size: 2.2vw;
+}
+@media screen and (max-width:1023px) {
+    .fif{
+        width: 80%;
+    }
+}
+
+.body2 {
+    width: 100%;
+}
+.logo1{
+    font-family: regularQ;
+    font-size: 3.2vw;
+    color: white;
+}
+.connect {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 1.6vw;
+}
+
+.connect i{
+    font-size: 3.2vw;
+    transition: all ease .4s;
+}
+.connect i:hover{
+    color: royalblue;
+}
